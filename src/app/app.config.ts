@@ -9,12 +9,14 @@ import { provideHttpClient } from '@angular/common/http';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabase } from '@angular/fire/compat/database';
 const firebaseConfig = {
-  apiKey: "AIzaSyBs6novT3RZb7Lb9AtQyX09s51dQvLVbaE",
-  authDomain: "angularfire-demo-8e101.firebaseapp.com",
-  projectId: "angularfire-demo-8e101",
-  storageBucket: "angularfire-demo-8e101.firebasestorage.app",
-  messagingSenderId: "553540769596",
-  appId: "1:553540769596:web:5135e25de5cc60a1553039"
+  apiKey: "AIzaSyBQCY4btO9a9-r76aGGtzUU6kOP6oD_bSg",
+  authDomain: "menugaia.firebaseapp.com",
+  databaseURL: "https://menugaia-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "menugaia",
+  storageBucket: "menugaia.firebasestorage.app",
+  messagingSenderId: "111145652694",
+  appId: "1:111145652694:web:30cc73acc9179c2b33d477",
+  measurementId: "G-DRQG2Y2ZPK"
 };
 export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes),provideHttpClient(),

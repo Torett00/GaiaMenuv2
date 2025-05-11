@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "LeGarage": {
+    "GaiaMenu": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/LeGarage",
+            "outputPath": "dist/GaiaMenu",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -57,10 +57,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "LeGarage:build:production"
+              "buildTarget": "GaiaMenu:build:production"
             },
             "development": {
-              "buildTarget": "LeGarage:build:development"
+              "buildTarget": "GaiaMenu:build:development"
             }
           },
           "defaultConfiguration": "development"
