@@ -1,237 +1,94 @@
+<html >
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
 <body class="background">
-
-   
-
-
-
-  @if (authService.currentUsersig()){
-    <div class="buttondexonixon">
-    
-      <span (click)="logout()" class="glyphicon glyphicon-log-out">Logout  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFF"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z"/></svg></span> 
-    </div>
-    <p class="des2" (click)="navigateToDash()" style="cursor: pointer;"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFF"><path d="M520-600v-240h320v240H520ZM120-440v-400h320v400H120Zm400 320v-400h320v400H520Zm-400 0v-240h320v240H120Zm80-400h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z"/></svg>  Dash </p>
-
- 
-  }
-    <img src="assets/images/gaiailogo5.png" alt="Image" class="imagef1">
-    <img src="assets/images/icons8-facebook.svg" alt="Icon" alt="Clickable Image" (click)="navigateToFacebock()" class="face" width="66px">
-
-    <img src="assets/images/icons8-instagram.svg" alt="Icon" alt="Clickable Image" (click)="navigateToInsta()" class="insta" width="66px">
-
-    
-    <div class="image">
-      <img src="assets/images/Hat.svg"alt="SVG Image" class="hatphoto" />
-    </div>
-
-    <!-- <div class="container" *ngFor="let cat of catgeoriges">
-      <h3 class="cafecat">{{cat.name}}</h3>
-      
-      <ul class="list2">
-        Filter products by category name
-        <div  *ngFor="let prod of getProductsByCategory(cat.name)">
-          <li class="item">
-            <span class="dess">{{prod.name}}</span>
-            <span class="prix">{{prod.prix}} TND</span>
-          </li>
-          <li class="item2">{{prod.description}}</li>
-        </div>
-      </ul>
-      
-      <div class="image">
-        <img src="assets/images/LOGOGA.svg" alt="SVG Image" class="cafeephoto" />
+  <div >
+  <div class="overlay">
+      <div class="top"> 
+     
+        <img src="assets/images/icons8-facebook.svg" alt="Icon" alt="Clickable Image"  class="face" width="66px">
+        <img src="./assets/images/gaiailogolast.png" alt="Cafe Logo" class="Logo">
+        <img src="assets/images/icons8-instagram.svg" alt="Icon" alt="Clickable Image"  class="insta"width="66px">
+        <!-- <h1 class="Title">Café-Pizzeria</h1> -->
+     
+       
       </div>
-    </div> -->
+    
 
-        <div class="card-grid">
-        <!-- Card 1 -->
-               <div class="card">
-  <p>Card Title 8</p>
-  <div class="image-container">
-    <img src="assets/images/cserclee for picturee.png" alt="Image" class="cafeekas" />
-  </div>
-</div>
+       <div class="categories1">
         
+          <div class="Container1" ><img src="/assets/images/burger&sandwich.png" class="iconee1"alt="Clickable Image" > <p class="des">  BURGER & Sandwish </p>
+          </div>
+          
+          <div  class="Container1"><img src="/assets/images/petitdej3pict.png"class="iconee1" alt="Clickable Image" > <p class="des">  Petit D ejuner </p>
+          </div>
+         
+      </div>
+
+        <div class="categories2">
         
-        <!-- Card 2 -->
-        <div class="card">
-            <h3>Card Title 2</h3>
-           
-        </div>
+      
+            <div  class="Container2"><img src="/assets/images/cake.gaufre.creps...png" class="iconee3" alt="Clickable Image" > <p class="des">  Pour une petite faim </p>
+
+          </div>
+         
+      </div>
+
+       <div class="categories1">
         
-        <!-- Card 3 -->
-        <div class="card">
-            <h3>Card Title 3</h3>
-        </div>
+          <div class="Container3" ><img src="/assets/images/pizaalast2.png" class="iconeepizaaa"alt="Clickable Image" > <p class="des">  Pizza </p>
+          </div>
+          
+          <div  class="Container3"><img src="/assets/images/pLATSS.png"class="iconee0" alt="Clickable Image" > <p class="des">  Nos Plats </p>
+          </div>
+         
+      </div>
+
+       <div class="categories2">
         
-        <!-- Card 4 -->
-        <div class="card">
-            <h3>Card Title 4</h3>
-        </div>
-        
-        <!-- Card 5 -->
-        <div class="card">
-            <h3>Card Title 5</h3>
-        </div>
-        
-        <!-- Card 6 -->
-        <div class="card">
-            <h3>Card Title 6</h3>
-        </div>
-        
-        <!-- Card 7 -->
-        <div class="card">
-            <h3>Card Title 7</h3>
-        </div>
-        
-        <!-- Card 8 -->
-        <div class="card">
-  <p>Card Title 8</p>
-  <div class="image-container">
-    <img src="assets/images/cserclee for picturee.png" alt="Image" class="cafeekas" />
-  </div>
-</div>
-        
-        <!-- Card 9 -->
-        <div class="card">
-            <h3>Card Title 9</h3>
-        </div>
+      
+            <div  class="Container2"><img src="/assets/images/gateuuux.png" class="iconee3" alt="Clickable Image" > <p class="des">   Nos Douceurs Sucrees</p>
+
+          </div>
+      
+    
+       </div>
+      
     </div>
-
-    <!-- <div class="image">
-      <img src="assets/images/plat.svg" alt="SVG Image" class="platphoto" /> 
-     </div> -->
-      <!-- <div class="image">
-        <img src="assets/images/cserclee for picturee.png" alt=" Image" class="cafeekas" />
-      </div> -->
-    <div class="image">
+  <div class="image">
       <img src="assets/images/lastforlegarage.svg" alt="SVG Image" class="lastforlegarage" />
     </div>
-    <!-- <div class="image">
-      <img src="assets/images/cafeeilustratuion2.svg" alt="SVG Image" class="cafeekas" />
-    </div> -->
-
-          <!-- <img src="assets/images/LOGOGA.svg" alt="SVG Image" class="cafeephoto" /> -->
-
+  <div class="BY"> by Chlack Chlack</div>
+  </div>
   
-      <!-- <img src="assets/images/Hat.svg"alt="SVG Image" class="hatphoto" /> -->
+  </body>
+  </html>
   
 
-      <!-- <img src="assets/images/LOGOGA.svg" alt="SVG Image" class="cafeephoto" /> -->
-      <!-- <div class="image">
-        <img src="assets/images/LOGOGA.svg" alt="SVG Image" class="cafeephoto" />
-      </div> -->
-       
-        <!-- <div class="image">
-        </div>
 
-    
-
-
-
-  
-       
-        <div class="image">
-          <img src="assets/images/LOGOGA.svg" alt="SVG Image" class="cafeephoto" />
-        </div>
-
-      
-       
-        <div class="image">
-          <img src="assets/images/LOGOGA.svg" alt="SVG Image" class="cafeephoto" />
-        </div>
-   
-
-  
-    <div class="image">
-      <img src="assets/images/Hat.svg"alt="SVG Image" class="hatphoto" />
-    </div>
-
-
-
-        <div class="image">
-          <img src="assets/images/LOGOGA.svg" alt="SVG Image" class="cafeephoto" />
-        </div>
- 
-       
-        <div class="image">
-          <img src="assets/images/LOGOGA.svg" alt="SVG Image" class="cafeephoto" />
-        </div>
- 
-       
-        <div class="image">
-          <img src="assets/images/LOGOGA.svg" alt="SVG Image" class="cafeephoto" />
-        </div>
-    
-     
-    <div class="image">
-      <img src="assets/images/Hat.svg"alt="SVG Image" class="hatphoto" />
-    </div>
-
-
-        <div class="image">
-          <img src="assets/images/LOGOGA.svg" alt="SVG Image" class="cafeephoto" />
-        </div>
-
-
-
-    <div class="image">
-      <img src="assets/images/Hat.svg"alt="SVG Image" class="hatphoto" />
-    </div>
-
-
+      <div class="categories">
         
-       
-        <div class="image">
-          <img src="assets/images/LOGOGA.svg" alt="SVG Image" class="cafeephoto" />
-        </div>
+          <div class="Container" ><img src="/assets/images/BURGER.png" class="iconee2"alt="Clickable Image" > <p class="des">  BURGER </p>
+          </div>
+          
+          <div  class="Container"><img src="/assets/images/cserclee for 2.png"class="iconee2" alt="Clickable Image" > <p class="des">  Thés et Boissons </p>
+          </div>
+          <div  class="Container"><img src="/assets/images/cserclee for picturee.png" class="iconee2" alt="Clickable Image" > <p class="des">  Cocktails </p>
 
+          </div>
+          <div  class="Container"><img src="/assets/images/pizza2.png" class="iconee2" alt="Clickable Image" > <p class="des"> Mojitos et jus </p>
+          </div>
+          
+          <div class="Container" ><img src="/assets/images/plat22.png" class="iconee2" alt="Clickable Image" > <p class="des"> milk shake </p>
+          </div>
+          <div  class="Container"><img src="/assets/photos/pate.jpeg" class="iconee2" alt="Clickable Image" > <p class="des" >   pâtissières  </p>
+          </div>
+          
+          <!-- <div  class="Container"><img src="/assets/images/cake.gaufre.creps...png" class="iconee3" alt="Clickable Image" > <p class="des">  pizzas </p>
 
-    <div class="image">
-      <img src="assets/images/Hat.svg"alt="SVG Image" class="hatphoto" />
-    </div>
-
-
-   
-      
-    
-        
-       
-      <div class="image">
-        <img src="assets/images/plat.svg" alt="SVG Image" class="platphoto" /> 
-       </div>
-
-
-       
-        <div class="image">
-         <img src="assets/images/ramen.svg" alt="SVG Image" class="ramenphoto" /> 
-        </div>
-
-
-    <div class="image">
-      <img src="assets/images/Hat.svg"alt="SVG Image" class="hatphoto" />
-    </div>
-
-
-
-    
-  
-       
-        <div class="image">
-          <img src="assets/images/croissants.svg" alt="SVG Image" class="croissantphoto" />
-        </div>
-
-    
-
-      
-        <div class="image">
-          <img src="assets/images/cafeeilustratuion2.svg" alt="SVG Image" class="cafeekas" />
-        </div>
-
-         
-          <div class="image">
-            <img src="assets/images/LOGOGA.svg" alt="SVG Image" class="cafeephoto" />
           </div> -->
-
-      
-     
-</body>
+          
+         
+      </div>

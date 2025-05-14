@@ -1,296 +1,225 @@
-/* styles.css */
-/* *{
-    margin: 0;
-    padding: 0;
-  } */
 
- 
-  .background {
-   
-      background-color: #DE9E36;  /* Example color */
-      /* background-image: linear-gradient(40deg,#DEB841 ,#F8F2DC); */
-      background-image: linear-gradient(40deg,#ffffff ,#ffffff);
-      height: 100%;
-        /* Ensure the background covers the whole viewport */
-      margin: 0; 
-      width: auto;
-      border-radius: 5px; 
-      padding-bottom: 10px;/* Remove any default margin */
-    
-    }
-    .title {
-      position: relative;
-      top: 10px;                /* Keep this if you want to slightly adjust the title vertically */
-      text-align: center;       /* Center text inside the title */
-    }
-   
-.des2{
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  color: white;
+.iconee{
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
 }
-.glyphicon{
-  color: white;
-}
-    /* Ensure the container takes up the full width */
-    .container {
-      display: flex;
-      flex-direction: column; /* Change to column layout */
-      padding: 0; /* Remove padding from container */
-      margin: 20px auto;
-      width: 90%;
-      border-radius: 32px 5px 10px 5px;
-      background-color: #ffffff;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      box-sizing: border-box; 
-      overflow: hidden; /* Ensures child elements respect border-radius */  
-    }
-    
-    /* Category title styles */
-    .cafecat {
-   
-      padding: 12px 20px;
-      margin: 0;
-      background-color: #9DBEBB;
-      background-color: #000022;
-      border: #ffffff solid 3px; /* Light gray background */
-      color: #ffffff;
-      font-size: 18px;
-      
-      border-radius: 30px 0px;
-      border-bottom: 1px solid #e0e0e0;
-      font-family:Fantasy;
-      letter-spacing: 3px;
-  
-       /* Subtle separator */
-    }
-      /* Ensure the container takes up the full width */
-      .cafecat2{
-        position: relative;
-   left: 10%;
-   top :10px;
-   margin: 0px 0px;
-   font: italic small-caps bold 16px/2 cursive;
-  
-   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
-   font-size: 25px;
-   color: #ffffff;
-      }
-  .container2 {
-    display: flex;
-    justify-content: space-between;  /* Space out the list and the image */
-    align-items: center;  /* Vertically align the items in the center */
-    padding: 20px;         /* Optional: add some padding around the container */
-    /* border: 2px solid #000000; */
-    margin: 20px 25px;
-    padding: 7px 5px;
-    border-radius: 10px;
-    background-color: #383737;
-    box-shadow: #BFBDC1;
-    margin-bottom: 5px;
-  }
-   
-  
-    
-    .list2 {
-      flex: 1;               /* Makes the list take up the available space */
-      padding: 0px 20px;
-  
-       
-     /* Space between the list and the image */
-    }
-    .font1{
-      padding-bottom: 20px;
-      margin-left: 15px;
-    }
-    .imagef1 {
-      width: 100px;
-      height: 150px;
-      display: block; /* Ensures margin: auto works */
-      margin: 0 auto 0 calc(50% - 175px - 30px); /* Centered + 20px right */
-    }
- 
-    @media (min-width: 300px) {
-      .imagef1{
-        position: relative;
-        top: 20px;
-        left: 47px;
-        width:300px;
-     
-      }
-    }
-  .cafeephoto{
-    position: absolute;
-    top: 30%;
-    left: 77%;
-    width: 110px;
-    height: 110px;
-  }
-  .ramenphoto{
-    position: absolute;
-    top: 110%;
-    left: 55%;
-    width: 100px;
-    height: 100px;
-    opacity: 0.8;
-  }
-  .platphoto{
-    position: absolute;
-    top: 43%;
-    left: 20%;
-    width: 100px;
-    height: 100px;
-    /* opacity: 1; */
-  }
-  .croissantphoto{
-    position: absolute;
-    top: 245%;
-    left: 58%;
-    width: 100px;
-    height: 100px;
-    opacity: 0.8;
-  }
-  .cafeekas{
-    position: absolute;
-    top: 100%;
-    left: 60%;
-    width: 150px;
-    height: 150px;
-    opacity: 0.7;
-  }
   .lastforlegarage {
     position: fixed;  /* Changed from absolute to fixed */
     bottom: 0;        /* Changed from 1% to 0 to stick exactly to bottom */
     left: 0%;
     width: auto;
     height: auto;
-    opacity: 0.3;
+    opacity: 0.4;
     z-index: 100;     /* Ensures it stays above other content */
 } 
-  .hatphoto{
-    position: absolute; /* Change to absolute to take it out of the flow */
-    top: 160px;
-    left: 0px;
-    width: 100px;
-    height: 100px;
-  }
-  .tabletest {
-    width: 50%;
-    margin-bottom: 5px auto;
-    
-    border-collapse: collapse;
-  }
-  
-  .tabletest td {
-    padding: 10px 20px;
-     /* Adds more space between columns */
+
+.background {
+    /* background-image: url("/assets/photos/walpep.jpg"); */
+    /* background: linear-gradient(135deg, #a1c4b0c1, #7d4f2c68); */
+     /* background: linear-gradient(135deg, #ffffffc1, #ffffff68); */
+    /* background: linear-gradient(120deg,#7fc29d,#f1ecb9); */
+    background-size: cover;      /* Ensures the image covers the full element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100%;               /* Sets height to viewport height */
+    width: 100vw;                /* Sets width to viewport width */
+    margin: 0;                   /* Removes any default body margin */
+    overflow: hidden;            /* Prevents scrolling from small gaps */
+}
+.overlay{
+   text-align: center;
    
-     /* Adds border for visibility */
-     font-size: small;
+  position: relative;
+
   
-  
-     
-  }
-  .tdleft{
-    margin-left: 100px;
-    text-align: right; 
-  }
-  .font1{
-    list-style-type: none;
-  color: #000000;
-    font-size: 12px;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-  
-  
-  .item {
-    display: flex;
-    justify-content: space-between;  /* Spreads the item and price */
-    align-items: center;             /* Aligns items vertically centered */
-    color: rgb(0, 0, 0);
-    font-size:14px ;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    margin-left: -8px;
+
+ margin-top: 50px;
     
-  }
+}
+.BY{
+    color: rgb(36, 31, 31);
+ margin-top: 50px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    font-size: small;
+    margin-left: 15px;
+    font-style:oblique;
+}
+.Logo{
+    width: 140px;
+    height: 90px;
+    margin-top: -20px;
   
-  .item3 {
-    display: flex;
-    justify-content: space-between;  /* Spreads the item and price */
-    align-items: center;             /* Aligns items vertically centered */
-    color: rgb(0, 0, 0);
-    font-size:12px ;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    margin-left: -8px;
     
-  }
-  .item2{
     
-    font-weight:lighter;
-    margin-top: -3px;
-    margin-bottom: 2px;
-    margin-left: 4px;
-    font-size: 9px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    list-style-type: none;
-    color: rgb(0, 0, 0);
-  }
-  .item3forbrunch{
-    list-style-type: none;
-    font-size: 12px
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+.Title{
+   /* padding-bottom: 10px; */
+   margin-top: 8px;
+   font-family: 'Courier New', Courier, monospace;
+   color: #f5f3f3;
+   font-size: 28px;
+   /* background-image: url("/assets/photos/hachira5.jpg");
   
-  }
-  .cafecatForbrunch{
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text; */
+   
+}
+.insta{
     position: relative;
-    left: 10%;
-    top :10px;
-    margin: 0px 5px;
-    font: italic small-caps bold 16px/2 cursive;
+    top: 25px;
+
+}
+.face{
+    position: relative;
+    top: 25px;
+
+}
+
+.categories {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 10px ; /* Optional: Space between items */
+    row-gap: 70px; 
+    padding-left: 3px;
+}
+.categories1 {
+    left: 20px;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 3 equal columns */
+    gap: 1px ; /* Optional: Space between items */
+    row-gap: 70px; 
+    padding-left: 10%;
+    padding-bottom: 15px;
    
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
-    font-size: 25px;
-    color: #ffffff;
-    text-decoration: underline;
-  }
-  .list2forbrunch{
-    flex: 1     ;        /* Makes the list take up the available space */
-   padding: 10px 8px;
-  
-  }
-  .dess{
-    font-size: 13px;
- 
-font-family: Monospace; 
- }
-  .prix {
-    font-family: Monospace;     padding-right: 5px;                   /* Adds space on the right */
-    color: #000000;                        /* Sets the text color */
-    font-weight:lighter;                     /* Makes the text bold */
-                      /* Slightly increases font size */
-              /* Adds a light background */
-                     /* Rounds the background corners */
-                     /* Adds space around the text */
+}
+.Container1{
+    width: 125px;
+    height: 125px;
+    padding-right: 14px;
     
-                     /* Aligns text to the right */
-                     font-size: small;
-  }
-  .insta{
-    position: absolute;
-    top: 80px;
-    left:80%;
-  
-  }
-  .face{
-    position: absolute;
-    top: 80px;
-    left: 3%;
-  
-  }
+    /* border: 1px solid #ffffff; */
+}
+.iconeepizaaa{
+    /* margin-top: 0px; */
+    position: relative;
+    left: -40%;
+    width: 200px;
+    height:150px;
+ 
+}
+.iconee1{
+    /* margin-top: 0px; */
+    width: 130px;
+    height:104px;
+ 
+}
+.categories2 {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Creates 3 equal columns */
+    gap: 10px ; /* Optional: Space between items */
+    row-gap: 70px; 
+    padding-left: 3px;
+}
+.iconee2{
+    /* margin-top: 0px; */
+    width: 115px;
+    height:100px;
+    border-radius: 60px;  
+}
 
+.Container{
+    width: 125px;
+    height: 125px;
+    padding-right: 14px;
+    /* border: 1px solid #ffffff; */
+}
 
+.Container3 {
+    width: 125px;
+    height: 125px;
+    padding-right: 14px;
   
+}
+.iconee3{
+    width: 320px;
+    height:210px;
+}
+.iconee0{
+    width: 160px;
+    height:140px;
+}
+
+.des{
+    padding-top: 15px;
+       color: #000000;
+    font-size: 16px;
+    font-family: 'cursive', monospace, sans-serif;
+    text-transform: uppercase;
+     font-weight: bold; /* Most common method */
+
+    letter-spacing: 1px; 
+}
+
+@media (max-height: 745px) {
+   
+
+    .overlay{
+    
+     
+       
+     
+      margin-top: 30px;
+         
+     }
+    
+     .Logo{
+        width: 130px;
+        height: 80px;
+        margin-top: -20px;
+       
+        margin-bottom: 10px;
+    }
+    .Title{
+        /* padding-bottom: 10px; */
+        margin-top: 8px;
+        
+        font-size: 25px;
+        /* background-image: url("/assets/photos/hachira5.jpg");
+       
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text; */
+        
+     }
+     .categories {
+        padding-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+        gap: 7px ; /* Optional: Space between items */
+        row-gap: 17px; 
+    }
+
+    .iconee2{
+        /* margin-top: 0px; */
+        width: 150px;
+        height: 150px;
+        border-radius: 60px;  
+    }
+    .Container{
+        width: 100px;
+        height: 100px;
+        padding-left: 18px;
+        /* border: 1px solid #ffffff; */
+    }
+    .des{
+        padding-top: 5px;
+        color: #24471c;
+        font-size: 11px;
+        font-family: 'cursive', monospace, sans-serif;
+        text-transform: uppercase;
+    }
+  }
