@@ -223,3 +223,184 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    font-size: smal
         text-transform: uppercase;
     }
   }
+
+  @media only screen and (min-width: 1024px) {
+  /* Your PC-specific styles here */
+.background {
+    /* background-image: url("/assets/photos/walpep.jpg"); */
+    /* background: linear-gradient(135deg, #a1c4b0c1, #7d4f2c68); */
+     /* background: linear-gradient(135deg, #d0ecabc1, #7a232368); */
+    /* background: linear-gradient(120deg,#7fc29d,#f1ecb9); */
+    background-size: cover;      /* Ensures the image covers the full element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100%;               /* Sets height to viewport height */
+    width: 100%;                /* Sets width to viewport width */
+    margin: 0;                   /* Removes any default body margin */
+    overflow: hidden;            /* Prevents scrolling from small gaps */
+}
+.overlay{
+   text-align: center;
+   
+  position: relative;
+
+  
+
+ margin-top: 50px;
+    
+}
+.Logo{
+    width: 280px;
+    height: 130px;
+    margin-top: -20px;
+    opacity: 1;
+    margin-bottom: 10px;
+}
+.categories1 {
+    position: relative;
+    left: 0%;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 3 equal columns */
+    gap: 100px ; /* Optional: Space between items */
+    row-gap: 70px; 
+    padding-left: 10%;
+    padding-bottom: 15px;
+   
+}
+.Container1{
+    width: 225px;
+    height: 225px;
+    padding-right: 14px;
+    
+    /* border: 1px solid #ffffff; */
+}
+
+.iconee1{
+    /* margin-top: 0px; */
+    width: 400px;
+    height:325px;
+ 
+}
+.iconee1:hover{
+    /* margin-top: 0px; */
+    width: 480px;
+    height:390px;
+}
+.des {
+    position: relative;
+    left: 40%;
+    padding: 15px; /* Updated to apply padding all around */
+    color: #000000;
+    font-size: 16px;
+    font-family: 'cursive', monospace, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    
+    /* New additions */
+    background-color: #b3e2bb; /* Light gray background - change color as needed */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center text horizontally */
+    
+    /* Optional enhancements */
+    display: inline-block; /* Or 'block' depending on your layout needs */
+    margin: 5px; /* Adds some space around the element */
+    border: 1px solid #e0e0e0; /* Light border */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+  .lastforlegarage {
+    position: fixed;  /* Changed from absolute to fixed */
+    bottom: 0;        /* Changed from 1% to 0 to stick exactly to bottom */
+    left: 0%;
+    width: 100%;
+    height: 30%;
+    opacity: 0.4;
+    z-index: 100;     /* Ensures it stays above other content */
+} 
+
+
+
+.categories2 {
+    position: relative;
+    left: 30%;
+    padding-top: 15%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Creates 3 equal columns */
+    gap: 10px ; /* Optional: Space between items */
+    row-gap: 70px; 
+    padding-left: 3px;
+}
+.Container2{
+    width: 181px;
+    height: 127px;
+    padding-right: 14px;
+    /* border: 1px solid #ffffff; */
+}.des2{
+  position: relative;
+  left: -40%;
+  padding-top: 7%;
+       color: #000000;
+    font-size: 16px;
+    /* font-family: 'cursive', monospace, sans-serif; */
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    /* text-transform: uppercase; */
+     font-weight: bold; /* Most common method */
+
+    letter-spacing: 1px; 
+}
+.iconee3{
+    width: 543px;
+    height:381px;
+}
+
+.Container3{
+    width: 225px;
+    height: 225px;
+    padding-right: 14px;
+    
+    /* border: 1px solid #ffffff; */
+}
+
+
+.iconeepizaaa{
+    /* margin-top: 0px; */
+    width: 400px;
+    height:325px;
+ 
+}
+.iconeepizaaa:hover{
+    /* margin-top: 0px; */
+    width: 480px;
+    height:390px;
+}
+.iconee0{
+    /* margin-top: 0px; */
+    width: 400px;
+    height:325px;
+ 
+}
+.iconee0:hover{
+    /* margin-top: 0px; */
+    width: 480px;
+    height:390px;
+}
+
+.categories4 {
+    position: relative;
+    left: 30%;
+    padding-top: 14%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Creates 3 equal columns */
+    gap: 10px ; /* Optional: Space between items */
+    row-gap: 70px; 
+    padding-left: 3px;
+  
+}
+.Container4{
+    width: 181px;
+    height: 127px;
+    padding-right: 14px;
+    /* border: 1px solid #ffffff; */
+}
+}
