@@ -119,9 +119,17 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    font-size: smal
     padding-top: 50px;
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Creates 3 equal columns */
-    gap: 10px ; /* Optional: Space between items */
+    gap: 8px ; /* Optional: Space between items */
     row-gap: 1%; 
     padding-left: 3px;
+}
+.Container2{
+    position: relative;
+    left: 9%;
+    width: 181px;
+    height: 127px;
+  
+    /* border: 1px solid #ffffff; */
 }
 .iconee2{
     /* margin-top: 0px; */
@@ -175,7 +183,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    font-size: smal
     letter-spacing: 1px; 
 }
 .des2{
-      padding-top: 5px;
+      padding-top: 16%;
        color: #000000;
     font-size: 16px;
     font-family: 'cursive', monospace, sans-serif;
@@ -207,8 +215,8 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    font-size: smal
     position: absolute;
     top: 7.5%;
     left: 40%;
-    width: 70px ;
-    height:60px ;
+    width: 60px ;
+    height:50px ;
     opacity: 0.8;
    
 }
@@ -371,7 +379,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    font-size: smal
 
 .categories2 {
     position: relative;
-    left: 30%;
+    left: 20%;
     padding-top: 15%;
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Creates 3 equal columns */
@@ -386,7 +394,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    font-size: smal
     /* border: 1px solid #ffffff; */
 }.des2{
   position: relative;
-  left: -40%;
+  left: -30%;
   padding-top: 7%;
        color: #000000;
     font-size: 16px;
