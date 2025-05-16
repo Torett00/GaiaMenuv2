@@ -105,10 +105,8 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    font-size: smal
 }
 .iconeepizaaa{
     /* margin-top: 0px; */
-    position: relative;
-    left: -40%;
-    width: 200px;
-    height:150px;
+   width: 130px;
+    height:104px;
  
 }
 .iconee1{
@@ -122,7 +120,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    font-size: smal
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Creates 3 equal columns */
     gap: 10px ; /* Optional: Space between items */
-    row-gap: 70px; 
+    row-gap: 1%; 
     padding-left: 3px;
 }
 .iconee2{
@@ -145,13 +143,25 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    font-size: smal
     padding-right: 14px;
   
 }
+
 .iconee3{
     width: 320px;
     height:210px;
+   /* border: 5px solid rgb(0, 0, 0);
+   border-radius: 17px; */
 }
 .iconee0{
-    width: 160px;
-    height:140px;
+     width: 130px;
+    height:104px;
+}
+.cupcoffer{
+    position: absolute;
+    top: 60px;
+    left: 2px;
+    width:60px ;
+    height:58px ;
+    opacity: 0.3;
+   
 }
 
 .des{
@@ -163,6 +173,44 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    font-size: smal
      font-weight: bold; /* Most common method */
 
     letter-spacing: 1px; 
+}
+.des2{
+      padding-top: 5px;
+       color: #000000;
+    font-size: 16px;
+    font-family: 'cursive', monospace, sans-serif;
+    text-transform: uppercase;
+     font-weight: bold; /* Most common method */
+
+    letter-spacing: 1px; 
+}
+.categories4 {
+    
+    padding-top: 14%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Creates 3 equal columns */
+    gap: 10px ; /* Optional: Space between items */
+    row-gap: 1%; 
+    padding-left: 3px;
+  
+}
+.cupcoffer2{
+    position: absolute;
+    top: 7%;
+    left: 35%;
+    width:90px ;
+    height:45px ;
+    opacity: 0.6;
+   
+}
+.cupcoffer4{
+    position: absolute;
+    top: 7.5%;
+    left: 40%;
+    width: 70px ;
+    height:60px ;
+    opacity: 0.8;
+   
 }
 
 @media (max-height: 745px) {
@@ -403,4 +451,43 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    font-size: smal
     padding-right: 14px;
     /* border: 1px solid #ffffff; */
 }
+
+.cupcoffer{
+    position: absolute;
+    top: 111px;
+    left: 10px;
+    width:111px ;
+    height:115px ;
+    opacity: 0.3;
+   
+}
+.cupcoffer2{
+    position: absolute;
+    top: 111px;
+    left: 90%;
+    width:130px ;
+    height:60px ;
+    opacity: 0.9;
+   
+}
+.cupcoffer3{
+    position: absolute;
+    top: 30%;
+    left: 75%;
+    width:272px ;
+    height:400px ;
+    opacity: 0.2;
+   
+}
+
+.cupcoffer4{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width:100px ;
+    height:100px ;
+    opacity: 0.9;
+   
+}
+
 }
