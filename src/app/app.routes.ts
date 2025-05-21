@@ -6,6 +6,7 @@ import { DashComponent } from './dash/dash.component';
 import { CategorieComponent } from './categorie/categorie.component';
 import { ProduitComponent } from './produit/produit.component';
 import { AuthGuardService } from './auth-guard.service';
+import { FamilleeComponent } from './famillee/famillee.component';
 
 
 export const routes: Routes = [
@@ -17,6 +18,13 @@ export const routes: Routes = [
       {
         path: 'login',
         component: LoginComponent,
+      },
+
+      {
+        path: 'fam',
+        component: FamilleeComponent,
+        canActivate: [AuthGuardService],
+
       },
       
       {

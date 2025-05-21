@@ -1,11 +1,11 @@
 
 
 <h1 class="dash"> <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#fffff">   <path d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z"/></svg>  Dash <br> Gaia               <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#fffff">   <path d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z"/>   </svg>  </h1>
-<p class="des" (click)="navigateToprod()" style="cursor: pointer;">Products List</p><br>
-<p class="des" (click)="navigateToFamille()" style="cursor: pointer;">Famille List</p>
+<p class="des" (click)="navigateToprod()"style="cursor: pointer;">Products List</p><br>
+<p class="des" (click)="navigateToCategories()" style="cursor: pointer;">Categories List</p>
 
 <div style="position: fixed; top: 1px; right: 5px; z-index: 100;">
-  <p (click)="navigateToHome()" 
+  <p 
      style="margin: 0; padding: 5px; cursor: pointer; display: flex; align-items: center;">
     <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#333">
       <path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/>
@@ -14,11 +14,11 @@
   </p>
 </div>
 <div class="parent">
-    <div class="child1">Create Categorie<br>
+    <div class="child1">Create Famille<br>
        
        
         <form [formGroup]="createCategorieForm" (ngSubmit)="onFormSubmit()"> 
-        <label for="title" class="form-label cta">   Categorie Name </label>
+        <label for="title" class="form-label cta">   Famille Name </label>
      
             <input  placeholder=" name" type="title" id="form2Example2" class="form-control inp"  formControlName="name" />
             <!-- @if (createCategorieForm.get('name')?.invalid && createCategorieForm.get('name')?.touched) {
@@ -27,14 +27,7 @@
             @if (showNameRequiredError) {
               <div class="requiredname text-danger">Name is required</div>
             }
-            <label for="title" class="form-label cta">   Famille_name </label>
-            <select class="form-control inp" formControlName="famille_name" >
-              <option value="" disabled selected>Select a Famille</option>
-              <option *ngFor="let opt of familles" [value]="opt.name" >{{opt.name}}</option>
-           </select>
-           @if((createCategorieForm.get('famille_name')?.invalid && createCategorieForm.get('famille_name')?.touched)||showNameRequiredError2){
-            <div class="requiredname">famille_name is required</div>
-          }
+        
             <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4 btnadd" type="submit">ADD </button>
             <!-- <div *ngIf="createCategorieForm.get('name')?.invalid && createCategorieForm.get('name')?.touched" 
             class="text-danger">
@@ -48,7 +41,7 @@
           </div>
         }
     </div>
-    <div class="child2">Categories <br>
+    <div class="child2">Familles <br>
         <table class="tableCat">
             <thead>
               <tr>
@@ -59,15 +52,15 @@
               </tr>
             </thead>
             <tbody>
-              <tr  *ngFor="let cat of catgeoriges" >
+              <tr *ngFor="let cat of familles">
                 <!-- <td>{{cat.id}}</td> -->
-                <td class="partpx" (click)="navigateToProducts(cat.name)" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 150px;">
+                <td class="partpx"style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 150px;">
                   {{cat.name}}
                 </td>              
                  <td class="partpx">  <button class="updatebutton" (click)="openDialog(cat.id??'')">Update</button></td>
              
                 <td class="partpx" >
-                    <button *ngIf="cat.id" (click)="onDeleteCategorie(cat.id)">Delete </button>
+                    <button *ngIf="cat.id" (click)="onDeleteFamille(cat.id)">Delete </button>
                   </td>
                 
                   

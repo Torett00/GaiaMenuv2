@@ -1,0 +1,57 @@
+.title{
+    text-align: center;
+    margin-top: 8%;
+    }
+    .popupconatiner{
+      width: 325px;
+        height: 250px;
+      background-color: rgb(250, 250, 250);
+    }
+    .inp{
+        width: 200px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+     
+    }
+    .center-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* full height of viewport */
+      }
+      .cta{
+       position: relative;
+       left: 40px;
+      }
+      .btnadd{
+        width: 100px;
+        height: 35px;
+      }
+      .close-btn {
+        position: absolute;
+        top: 1%;
+        right: 1%;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: #ff0000;
+      }
+      
+      .close-btn:hover {
+        color: #333;
+      }
+      .requiredname{
+        position: relative;
+        margin-bottom: 10px;
+        color: red;
+        font-size: 12px;
+        left: 25%;
+      }.alertcatajouted{
+        position: relative;
+        margin-bottom: 0px;
+        color: rgb(41, 78, 15);
+        font-size: 12px;
+        left: 2%;
+      }
+      

@@ -1,32 +1,30 @@
-import { Component, Inject, inject } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { CategorieserService } from '../services/categorieser.service';
-import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { CategorieInterface } from '../interfaces/categorie.interface';
+import { Component, Inject } from '@angular/core';
+import { Ifamille } from '../interfaces/Ifamille';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { FamileService } from '../services/famile.service';
 
 @Component({
-  selector: 'app-popup',
+  selector: 'app-popup-famille',
   imports: [ReactiveFormsModule,CommonModule,],
-  templateUrl: './popup.component.html',
-  styleUrl: './popup.component.css'
+  templateUrl: './popup-famille.component.html',
+  styleUrl: './popup-famille.component.css'
 })
-export class PopupComponent {
-  catobj: CategorieInterface={
+export class PopupFamilleComponent {
+  catobj: Ifamille={
     id:'',
-    name:'',
-    famille_name:''
+    name:''
   }
   UpdateCategorieForm=new FormGroup( {
-    name: new FormControl<string>('',{ nonNullable:true }),
-    famille_name: new FormControl<string>('',{ nonNullable:true }),
-
+    name: new FormControl<string>('',{ nonNullable:true })
   } );
   
+
   constructor(
-    @Inject(MAT_DIALOG_DATA) public data: { categorie: CategorieInterface },
-    private servicecat: CategorieserService,
-    private dialogRef: MatDialogRef<PopupComponent> // Add this
+    @Inject(MAT_DIALOG_DATA) public data: { categorie: Ifamille },
+    private servicefam: FamileService,
+    private dialogRef: MatDialogRef<PopupFamilleComponent> // Add this
   ) {
     this.catobj = { ...data.categorie };
     // console.log(data.categorie);
@@ -36,6 +34,8 @@ export class PopupComponent {
   showSuccessMessage = false;
   successMessage = '';
   showNameRequiredError = false; 
+
+  
   OnsubmitFormUpdate(id: string): void {
     const categoryName = this.UpdateCategorieForm.value.name;
     if (this.UpdateCategorieForm.invalid) {
@@ -43,10 +43,9 @@ export class PopupComponent {
       return;
     }
   
-    const updatedData:CategorieInterface = {
+    const updatedData:Ifamille = {
       name: this.UpdateCategorieForm.value.name??'',
       id:id,
-      famille_name:this.UpdateCategorieForm.value.famille_name??'',
     };
     updatedData.name=this.UpdateCategorieForm.value.name??'';
 
@@ -55,7 +54,7 @@ export class PopupComponent {
     
    }else{
     
-    this.servicecat.updatecat(id, updatedData)
+    this.servicefam.updatecat(id, updatedData)
     .then(() => {
       // console.log('Category updated!');
       this.showNameRequiredError = false; 
@@ -74,8 +73,8 @@ export class PopupComponent {
     
   
    }
-    
   }
+
   closeDialog(): void {
     this.dialogRef.close();
   } 

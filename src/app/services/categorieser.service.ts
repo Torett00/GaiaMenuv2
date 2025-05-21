@@ -76,7 +76,8 @@ getallcat(): Observable<CategorieInterface[]> {
 }
   catobj: CategorieInterface={
     id:'',
-    name:''
+    name:'',
+    famille_name:''
   }
   async getCatById(id: string): Promise<CategorieInterface | null> {
     try {
@@ -92,6 +93,7 @@ getallcat(): Observable<CategorieInterface[]> {
 
         this.catobj.id=docSnap.id;
         this.catobj.name=data.name;
+        this.catobj.famille_name=data.famille_name;
         return this.catobj as CategorieInterface;
       } else {
         console.warn('No category found with ID:', id);

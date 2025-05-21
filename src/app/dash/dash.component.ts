@@ -10,6 +10,8 @@ import { Observable } from 'rxjs';
 import { MatDialog } from '@angular/material/dialog';
 import { PopupComponent } from '../popup/popup.component';
 import { Router } from '@angular/router';
+import { Ifamille } from '../interfaces/Ifamille';
+import { FamileService } from '../services/famile.service';
 
 
 
@@ -24,17 +26,21 @@ Validators
 export class DashComponent implements OnInit {
 
   catgeoriges:CategorieInterface[]=[];
-
+  familles:Ifamille[]=[];
   catobjaupdate: CategorieInterface={
     id:'',
-    name:''
+    name:'',
+    famille_name:''
   }
   
-  constructor(private servicecat:CategorieserService,private dialogRef : MatDialog,private router: Router) {}
+  constructor(private servicecat:CategorieserService,private servicefam:FamileService,private dialogRef : MatDialog,private router: Router) {}
 
   
   navigateToprod(): void {
     this.router.navigate(['/prod']);  // Redirect to 'target' route
+  }
+  navigateToFamille(): void {
+    this.router.navigate(['/fam']);  // Redirect to 'target' route
   }
   navigateToHome(): void {
     this.router.navigate(['/home']);  // Redirect to 'target' route
@@ -70,6 +76,10 @@ export class DashComponent implements OnInit {
       // console.log(res)
       this.catgeoriges=res;
     })
+    this.servicefam.getallcat().subscribe((res2:Ifamille[])=>{
+      // console.log(res2)
+      this.familles=res2;
+    })
    
 }
 
@@ -77,11 +87,14 @@ export class DashComponent implements OnInit {
   
   catobj: CategorieInterface={
     id:'',
-    name:''
+    name:'',
+    famille_name:'' 
   }
   
   createCategorieForm=new FormGroup( {
-    name: new FormControl<string>('',{ nonNullable:true ,validators:[Validators.required ,Validators.maxLength(30)]})
+    name: new FormControl<string>('',{ nonNullable:true ,validators:[Validators.required ,Validators.maxLength(30)]}),
+    famille_name: new FormControl<string>('',{ nonNullable:true ,validators:[Validators.required ,Validators.maxLength(30)]}),
+
   } );
 
 
@@ -100,12 +113,13 @@ export class DashComponent implements OnInit {
  }
 
  onDeleteCategorie(id:string){
-this.servicecat.delete(id);
+    this.servicecat.delete(id);
   }
+  showNameRequiredError2=false;
   showSuccessMessage = false;
   successMessage = '';
   showNameRequiredError = false;
-name2:string='';
+  name2:string='';
 
 
   onFormSubmit(){
@@ -113,13 +127,29 @@ name2:string='';
    
  
     const categoryName = this.createCategorieForm.value.name; // Get the category name from the form
+    const famille_name = this.createCategorieForm.value.famille_name; 
 
     // console.log('Category Name:', categoryName); // Log the category name (optional)
+    if (famille_name) {
+    this.showNameRequiredError2 = false; 
+      // Call the addCategory method and handle the result
+      // console.log('Category is there!',categoryData);
+    } else {
+      this.showNameRequiredError2 = true; 
 
+      // console.log('Category name is required!');
+    }
     if (categoryName ) {
       const categoryData = { name: categoryName };
-      this.addCategor();
       this.showNameRequiredError = false; 
+    }else{
+      this.showNameRequiredError = true; 
+
+    }
+    if(this.showNameRequiredError2==false && this.showNameRequiredError==false) {
+
+      this.addCategor();
+     
       // Show success message
       this.showSuccessMessage = true;
       this.successMessage = 'Category added successfully!';
@@ -129,10 +159,7 @@ name2:string='';
       this.createCategorieForm.reset();
       // Call the addCategory method and handle the result
       // console.log('Category is there!',categoryData);
-    } else {
-      this.showNameRequiredError = true; 
-      // console.log('Category name is required!');
-    }
+    } 
 
   }
 
