@@ -1,0 +1,50 @@
+.product-container {
+    display: flex;
+    justify-content: space-between; /* This creates space between the elements */
+    align-items: center; /* Vertically centers the items */
+    width: 100%;
+    max-width: 500px; /* Adjust as needed */
+    margin: px 0;
+ 
+    padding: 20px 10px;
+    border-bottom: 1px solid #eee; /* Optional divider */
+  }
+  .body {
+    background-image: url('/assets/images/backgrounddet.jpeg');
+    background-size: cover;       /* Ensures full coverage */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-attachment: fixed; /* Optional: Fixes the background while scrolling */
+    min-height: 100vh;           /* Ensures full viewport height */
+    margin: 0;                   /* Removes default body margin */
+    padding: 20px;   
+   
+        /* Adds spacing (adjust as needed) */
+  }
+  
+  /* Ensures content is readable over the background */
+  .title, .container {
+    color: rgb(0, 0, 0);                /* Light text for dark backgrounds */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Improves readability */
+  }
+  .container{
+    
+padding: 7%  8%;
+  }
+  
+  .product-name {
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  .product-price {
+    text-align: left;
+    color: #e63946; /* Price color - change as needed */
+    font-weight: bold;
+  }
+
+
+.title{
+    padding-top: 2%;
+    text-align: center;
+}

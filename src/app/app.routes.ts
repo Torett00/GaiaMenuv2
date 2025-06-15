@@ -7,6 +7,7 @@ import { CategorieComponent } from './categorie/categorie.component';
 import { ProduitComponent } from './produit/produit.component';
 import { AuthGuardService } from './auth-guard.service';
 import { FamilleeComponent } from './famillee/famillee.component';
+import { DetalisComponent } from './detalis/detalis.component';
 
 
 export const routes: Routes = [
@@ -40,6 +41,11 @@ export const routes: Routes = [
       {
         path: 'prod',
         component: ProduitComponent,
+        canActivate: [AuthGuardService],
+      },
+      {
+        path: 'deta',
+        component: DetalisComponent,
         canActivate: [AuthGuardService],
       },
     

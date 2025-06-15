@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Website</title>
+    <!-- Other head elements -->
+</head>
+<div class="body">
+  <h1 class="title">{{ FamilleName }}</h1>
+  <div class="container" *ngFor="let cat of filteredCategorie">
+    <div class="product-container">
+      <div class="product-name">{{ cat.name }}</div>
+      <div class="product-price">$19.99</div>
+    </div>
+  </div>
+</div>
+</html>

@@ -101,12 +101,11 @@ export class DashComponent implements OnInit {
  addCategor(){
   const {value}= this.createCategorieForm
   
-  if (this.createCategorieForm.value.name !== undefined )  {
+  if (this.createCategorieForm.value.name !== undefined  &&this.createCategorieForm.value.famille_name !==undefined)  {
     this.catobj.name = this.createCategorieForm.value.name;
+    this.catobj.famille_name=this.createCategorieForm.value.famille_name??''
    
-  } else {
-    this.catobj.name = ''; // Or another default value
-  }
+  } 
   
   this.servicecat.addcat(this.catobj);
   

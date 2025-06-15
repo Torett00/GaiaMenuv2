@@ -27,6 +27,11 @@ export class HomeComponent implements OnInit{
 constructor(private router:Router,private servicecat:CategorieserService,private serviceprod:ProduitservService,private servicecurentuser:CureentUserService) {
   
 }
+navigateToProducts(categoryName: string,Famliename:string) {
+  this.router.navigate(['/cat'], { queryParams: { category: categoryName } });
+  // or if you want to use route parameters:
+  // this.router.navigate(['/products', categoryName]);
+}
 getProductsByCategory(categoryName: string) {
   return this.products.filter(prod => prod.categorie_name === categoryName);
 }
@@ -43,6 +48,12 @@ getProductsByCategory(categoryName: string) {
       this.products =res;
   })
 }
+
+  navigateToDetalis(famille_name: string,num:Number) {
+    this.router.navigate(['/deta'], { queryParams: { familleey: famille_name ,nume:num} });
+    // or if you want to use route parameters:
+    // this.router.navigate(['/products', categoryName]);
+  }
 navigateToLogin(): void {
   this.router.navigate(['/login']);  // Redirect to 'target' route
 }
@@ -54,6 +65,7 @@ navigateToFacebock(): void {
 navigateToInsta(): void {
   window.location.href = 'https://www.instagram.com/cafe_le_garage/	'; // Replace with your Instagram URL
 }
+
 navigateToDash(): void {
   this.router.navigate(['/dash']);  // Redirect to 'target' route
 }
