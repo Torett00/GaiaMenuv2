@@ -1,16 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Your Website</title>
-    <!-- Other head elements -->
-</head>
-<div class="body">
-  <h1 class="title">{{ FamilleName }}</h1>
-  <div class="container" *ngFor="let cat of filteredCategorie">
-    <div class="product-container">
-      <div class="product-name">{{ cat.name }}</div>
-      <div class="product-price">$19.99</div>
+<div class="background-image"></div>
+<div class="main">
+  <div *ngFor="let famille of Famille">
+    <h1>{{ famille.famillename }}</h1>
+    <hr style="height: 2px; margin: 4px 0px;">
+    <hr style="height: 2px; margin: 4px 0px;">
+    <div *ngFor="let categorie of famille.Categories">
+      <h3>{{ categorie.categoriename }}</h3>
+
+      <div *ngFor="let product of categorie.Products">
+        <div class="productTitle">
+          <div>
+            <h6>{{ product.productName }}</h6>
+          </div>
+          <div>
+            <h6>{{ product.priceproduct }}</h6>
+          </div>
+        </div>
+        <p>{{ product.descriptionProduct }}</p>
+      </div>
+      <hr style="height: 1.5px;">
     </div>
   </div>
 </div>
-</html>
