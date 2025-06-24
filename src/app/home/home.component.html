@@ -1,68 +1,139 @@
-<html >
+<!-- <html>
+
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
 
 </head>
+
 <body class="background">
-  <div >
-  <div class="overlay">
-      <div class="top"> 
-     
-        <img src="assets/images/icons8-facebook.svg" alt="Icon" alt="Clickable Image"  class="face" width="66px">
+  <div>
+    <div class="overlay">
+      <div class="top">
+
+        <img src="assets/images/icons8-facebook.svg" alt="Icon" alt="Clickable Image" class="face" width="66px">
         <img src="./assets/images/gaiailogolast.png" alt="Cafe Logo" class="Logo">
-        <img src="assets/images/icons8-instagram.svg" alt="Icon" alt="Clickable Image"  class="insta"width="66px">
-        <!-- <h1 class="Title">Café-Pizzeria</h1> -->
+        <img src="assets/images/icons8-instagram.svg" alt="Icon" alt="Clickable Image" class="insta" width="66px">
       </div>
-    
 
-       <div class="categories1">
-          <div class="Container1" ><img src="/assets/images/burger&sandwich.png" class="iconee1"alt="Clickable Image" > <p class="des">  BURGER & Sandwish </p>
-          </div>
-          <div  class="Container1"><img src="/assets/images/petitdej3pict.png"class="iconee1" alt="Clickable Image" > <p class="des">  Petit D ejuner </p>
-          </div>
-        </div>
 
-        <div class="categories2">
-            <div  class="Container2"><img src="/assets/images/cake.gaufre.creps...png" (click)="navigateToDetalis('charbti',1)"  class="iconee3" alt="Clickable Image" > 
-            </div><br>
-          <p class="des2">  Pour une petite faim </p>
+      <div class="categories1">
+        <div class="Container1"><img src="/assets/images/burger&sandwich.png" class="iconee1" alt="Clickable Image">
+          <p class="des"> BURGER & Sandwish </p>
         </div>
+        <div class="Container1"><img src="/assets/images/petitdej3pict.png" class="iconee1" alt="Clickable Image">
+          <p class="des"> Petit D ejuner </p>
+        </div>
+      </div>
 
-       <div class="categories1">
-          <div class="Container3" ><img src="/assets/images/pizaalast2.png" class="iconeepizaaa"alt="Clickable Image" > <p class="des">Nos  Pizza </p>
-          </div>
-          <div  class="Container3"><img src="/assets/images/pLATSS.png"class="iconee0" alt="Clickable Image" > <p class="des">  Nos Plats </p>
-          </div>
-        </div>
+      <div class="categories2">
+        <div class="Container2"><img src="/assets/images/cake.gaufre.creps...png"
+            (click)="navigateToDetalis('charbti',1)" class="iconee3" alt="Clickable Image">
+        </div><br>
+        <p class="des2"> Pour une petite faim </p>
+      </div>
 
-       <div class="categories4">
-            <div  class="Container4"><img src="/assets/images/gateuuux.png" class="iconee3" alt="Clickable Image" > 
-            </div><br>
-            <p class="des2">   Nos Douceurs Sucrees</p>
+      <div class="categories1">
+        <div class="Container3"><img src="/assets/images/pizaalast2.png" class="iconeepizaaa" alt="Clickable Image">
+          <p class="des">Nos Pizza </p>
         </div>
-      
-    
-        <div class="image">
-          <img src="assets/images/cupcoffe.png" alt="Image" class="cupcoffer" />
+        <div class="Container3"><img src="/assets/images/pLATSS.png" class="iconee0" alt="Clickable Image">
+          <p class="des"> Nos Plats </p>
         </div>
-        <!-- <div class="image">
-          <img src="assets/images/coffertay7a.png" alt="Image" class="cupcoffer2" />
-        </div> -->
+      </div>
 
-         <div class="image">
-          <img src="assets/images/art.png" alt="Image" class="cupcoffer3" />
-        </div>
+      <div class="categories4">
+        <div class="Container4"><img src="/assets/images/gateuuux.png" class="iconee3" alt="Clickable Image">
+        </div><br>
+        <p class="des2"> Nos Douceurs Sucrees</p>
+      </div>
 
-        <div class="image">
-          <img src="assets/images/cupcoffe33.png" alt="Image" class="cupcoffer4" />
-        </div>
 
-        
+      <div class="image">
+        <img src="assets/images/cupcoffe.png" alt="Image" class="cupcoffer" />
+      </div>
+
+      <div class="image">
+        <img src="assets/images/art.png" alt="Image" class="cupcoffer3" />
+      </div>
+
+      <div class="image">
+        <img src="assets/images/cupcoffe33.png" alt="Image" class="cupcoffer4" />
+      </div>
+
+
 
     </div>
-  <div class="BY"> by Chlack Chlack</div>
+    <div class="BY"> by Chlack Chlack</div>
   </div>
-  
-  </body>
-  </html>
-  
+
+</body>
+
+</html>  -->
+<div class="main">
+  <div class="header">
+    <img src="assets/images/icons8-facebook.svg" class="logo">
+    <img src="./assets/images/gaiailogolast.png">
+    <img src="assets/images/icons8-instagram.svg" class="logo">
+  </div>
+  <div class="body">
+    <div class="multicategories">
+      <div class="Container">
+        <div class="containerImage">
+          <img src="/assets/images/burger&sandwich.png" (click)="navigateToDetalis('charbti',1)">
+        </div>
+        <div class="ContainerTitle">
+          <p> BURGER & Sandwish </p>
+        </div>
+      </div>
+      <div class="Container">
+        <div class="containerImage">
+          <img src="/assets/images/petitdej3pict.png" (click)="navigateToDetalis('charbti',1)">
+        </div>
+        <div class="ContainerTitle">
+          <p> Petit D ejuner </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="monocategorie">
+      <div class="Container">
+        <div class="containerImage">
+          <img src="/assets/images/cake.gaufre.creps...png" (click)="navigateToDetalis('charbti',1)">
+        </div>
+        <div class="ContainerTitle">
+          <p> Pour une petite faim </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="multicategories">
+      <div class="Container">
+        <div class="containerImage">
+          <img src="/assets/images/pizaalast2.png" (click)="navigateToDetalis('charbti',1)">
+        </div>
+        <div class="ContainerTitle">
+          <p>Nos Pizza </p>
+        </div>
+      </div>
+      <div class="Container">
+        <div class="containerImage">
+          <img src="/assets/images/pLATSS.png" (click)="navigateToDetalis('charbti',1)">
+        </div>
+        <div class="ContainerTitle">
+          <p> Nos Plats </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="monocategorie">
+      <div class="Container">
+        <div class="containerImage">
+          <img src="/assets/images/gateuuux.png" (click)="navigateToDetalis('charbti',1)">
+        </div>
+        <div class="ContainerTitle">
+          <p>Nos Douceurs Sucrees</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
