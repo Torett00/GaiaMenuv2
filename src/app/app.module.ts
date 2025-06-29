@@ -1,35 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './app.component';
-import { MatFormFieldModule } from '@angular/material/form-field';
-
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { RegisterComponent } from './register/register.component';
-import { LoginComponent } from './login/login.component';
-import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
-
-import { MatDialogModule} from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
 import { AuthGuardService } from './auth-guard.service';
-
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 @NgModule({
-    declarations: [
-      
-      
-    ],
-    imports: [
-      BrowserModule,
-      FormsModule ,
-      ReactiveFormsModule,
-      AngularFirestoreModule,
-      AngularFireDatabaseModule, 
-      MatDialogModule,
-      
-    
-      
-    ],
-    providers: [AuthGuardService], // Provide ConfigService here
-    bootstrap: []
-  })
-  export class AppModule { }
+  declarations: [
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AngularFirestoreModule,
+    AngularFireDatabaseModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
+    CommonModule,
+    RouterModule
+  ],
+  providers: [AuthGuardService],
+  bootstrap: []
+})
+export class AppModule { }
