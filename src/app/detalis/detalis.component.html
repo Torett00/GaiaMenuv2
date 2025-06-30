@@ -1,22 +1,22 @@
-<div class="background-image"></div>
+<div ></div>
 <div class="main">
   <div>
     <h1>{{ FamilleName }}</h1>
     <hr style="height: 2px; margin: 4px 0px;">
-    <hr style="height: 2px; margin: 4px 0px;">
-    <div *ngFor="let category of filteredCategorie">
+    <hr style="height: 2px; margin: 4px 0px; ">
+    <div  class="cont"*ngFor="let category of filteredCategorie">
       <h3 *ngIf="category.name != FamilleName">{{ category.name }}</h3>
 
-      <div *ngFor="let product of filteredProducts">
+      <div class="container"*ngFor="let product of filteredProducts">
         <div class="productTitle">
-          <div style="width: 50%;">
-            <h6>{{ product.name }}</h6>
+          <div style="width: 65%;">
+            <p class="namme">{{ product.name }}</p>
           </div>
-          <div style="width: 50%;">
-            <h6>{{ product.prix }} TND</h6>
+          <div style="width: 35%;" class="prrrixcontainer">
+            <p class="priix">{{ product.prix }} TND</p>
           </div>
         </div>
-        <p>{{ product.description }}</p>
+        <p class=" dess">{{ product.description }}</p>
       </div>
       <hr style="height: 1.5px;">
     </div>

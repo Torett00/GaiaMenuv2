@@ -17,26 +17,87 @@
   z-index: 1;
   text-align: center;
   padding: 10px;
+    background: linear-gradient(to top, #1d5e3149, #99885152);
+
+    /* background: radial-gradient( #ffffff, #1d683f); */
+    /* background: radial-gradient(circle, rgb(134, 196, 134), rgba(68, 29, 29, 0.164), white); */
+
 }
 
 .productTitle {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding-top: 2px;
+}
+.container{
+  margin-top: 2px;
+}
+.cont{
+  padding-top: 4px;
 }
 
 hr {
-  background-color: rgba(245, 245, 220);
-}
+  background-color: rgb(20, 20, 8);
+} 
 
 h1 {
   margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.863);
+  font-size: 45px;
+   text-shadow: 3px  3px 4px rgba(83, 65, 15, 0.486);
 }
 h2{
   margin: 20px 0px;
+  
+}
+h3{
+  margin-bottom: 16px;
+}
+.namme {
+  color: #000000;
+  
+ font-size: clamp(18px, 4vw, 30px); 
+  /* font-weight: bold; */
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.prrrixcontainer{
+  padding-left: 0%;
+}
+.priix {
+  color: #ffffff;
+font-size: clamp(12px, 3vw, 20px); 
+  /* font-weight: bold; */
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px rgba(44, 83, 73, 0.5);
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgba(22, 51, 19, 0.692);
+  padding: 2px;
+  border-radius: 5px;
+  width: 65%;
+  height: 100%;
+
+  /* Center text using Flexbox */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.dess{
+  /* border: 2px solid #000000c2; */
+  padding:0px ;
+ 
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-size: clamp(13px, 3vw, 20px); 
+   white-space: pre-line; /* preserves line breaks */
+  word-wrap: break-word; /* wraps long words */
+  max-width: 100%; 
 }
 p{
   font-size: clamp(10px, 4vw, 18px);
+  
 }
 .productTitle h6 {
   font-size: clamp(0.9rem, 4.4vw, 1.5rem);

@@ -10,4 +10,17 @@
 .goto{
     text-decoration: underline;
     color: rgb(0, 34, 255);
+}.logo-container {
+    position: absolute;
+    top: 15%; /* Adjust this percentage to move it higher/lower */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+   
+  }
+    .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
 }

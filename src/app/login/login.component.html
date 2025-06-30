@@ -12,13 +12,13 @@
     </div>
   </form> 
    -->
-  
+   <div class="logo-container">
+     <img src="./assets/images/gaiailogolast.png" width="115px" height="64px" class="logo">
+    </div>
   
   <div class="d-flex justify-content-center align-items-center vh-100 ">
-    <h1 class="log">Login</h1>
-    <div class="logo-container">
-      <img src="assets/images/logoo2.jpeg" alt="Logo" class="logo-image">
-    </div>
+    <!-- <h1 class="log">Login</h1> -->
+   
     <form class="w-70 " [formGroup]="form" (ngSubmit)="onSubmit()">
       <!-- Email input -->
       <div data-mdb-input-init class="form-outline mb-4">
@@ -50,7 +50,7 @@
   
       <!-- Register buttons -->
       <div class="text-center">
-        <p>u are a Member ? <a class="goto" (click)="navigateToprod()">Login</a></p>
+        <p>u are a Member ? <a class="goto" (click)="navigateToprod()">Register</a></p>
         
       </div>
     </form>
