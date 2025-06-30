@@ -5,7 +5,7 @@
     <hr style="height: 2px; margin: 4px 0px;">
     <hr style="height: 2px; margin: 4px 0px; ">
     <div  class="cont"*ngFor="let category of filteredCategorie">
-      <h3 *ngIf="category.name != FamilleName">{{ category.name }}</h3>
+      <h3  class="categorietitle"*ngIf="category.name != FamilleName">{{ category.name }}</h3>
 
       <div class="container"*ngFor="let product of filteredProducts">
         <div class="productTitle">

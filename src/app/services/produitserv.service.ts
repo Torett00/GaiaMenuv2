@@ -29,10 +29,10 @@ export class ProduitservService {
       createdAt: serverTimestamp(), // Firebase server-side timestamp
      // Clean up whitespace
     };
-    if (categoryExists) {
-      console.log('Product with this name already exists!');
-      return; // Don't proceed if category exists
-    }
+    // if (categoryExists) {
+    //   console.log('Product with this name already exists!');
+    //   return; // Don't proceed if category exists
+    // }
   
     // Add the new category to Firestore
     try {

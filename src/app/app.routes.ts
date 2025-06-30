@@ -13,7 +13,8 @@ import { DetalisComponent } from './detalis/detalis.component';
 export const routes: Routes = [
     { path: '' ,redirectTo:'home', pathMatch:'full' },
     { path: 'home' , component: HomeComponent},
-       { path: 'register',component: RegisterComponent,
+      { path: 'register',component: RegisterComponent,
+        canActivate: [AuthGuardService],
       },
 
       {
