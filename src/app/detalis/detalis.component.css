@@ -1,4 +1,4 @@
-.background-image {
+/* .background-image {
   position: fixed;
   top: 0;
   left: 0;
@@ -10,17 +10,18 @@
   background-repeat: no-repeat;
   opacity: 0.2;
   z-index: -1;
-}
+
+} */
 
 .main {
   position: relative;
-  z-index: 1;
+
   text-align: center;
   padding: 10px;
-    background: linear-gradient(to top, #1d5e3149, #99885152);
+  background: linear-gradient(to top, #1d5e3149, #99885152);
+  min-height: 100vh;
+    
 
-    /* background: radial-gradient( #ffffff, #1d683f); */
-    /* background: radial-gradient(circle, rgb(134, 196, 134), rgba(68, 29, 29, 0.164), white); */
 
 }
 
@@ -54,7 +55,7 @@ h2{
 .categorietitle{
   margin-bottom: 16px;
   
-  font-size: clamp(24px, 4vw, 30px); 
+  font-size: clamp(24px, 6vw, 40px); 
   
 }
 .namme {

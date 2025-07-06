@@ -1,8 +1,8 @@
 <div class="main">
   <div class="header">
-    <img src="assets/images/icons8-facebook.svg" class="logo">
+    <img src="assets/images/icons8-facebook.svg"  (click)="navigateToFacebock()" class="logo">
     <img src="./assets/images/gaiailogolast.png">
-    <img src="assets/images/icons8-instagram.svg" class="logo">
+    <img src="assets/images/icons8-instagram.svg" (click)="navigateSOICLAMEDOA('https://www.instagram.com/khaled_charbti/')  "class="logo">
   </div>
   <div class="body">
     <div class="multicategories">
@@ -38,7 +38,7 @@
     <div class="multicategories">
       <div class="Container">
         <div class="containerImage">
-          <img src="/assets/images/pizaalast2.png" (click)="navigateToMenus('Nos Plats')">
+          <img src="/assets/images/pizaalast2.png" (click)="navigateToMenus('Stylish Pizza')">
         </div>
         <div class="ContainerTitle">
           <p>Nos Pizza </p>
@@ -68,21 +68,39 @@
        <div class="multicategories">
          <div class="Container">
         <div class="containerImage">
-          <img src="/assets/images/" (click)="navigateToMenus('Nos Plats')">
+          <img src="/assets/images/ASIATIQUE3.png" (click)="navigateToMenus('Nos Plats')">
         </div>
         <div class="ContainerTitle">
-          <p> Nos Plats </p>
+          <p> Carte Asiatique </p>
         </div>
       </div>
-      <div class="Container">
+      <!-- <div class="Container">
         <div class="containerImage">
           <img src="/assets/images/chichhaaa1.png" (click)="navigateToMenus('Our Chicha')">
         </div>
         <div class="ContainerTitle">
           <p>Nos Chicha </p>
         </div>
+      </div> -->
+       <div class="Container">
+        <div class="containerImage">
+          <img src="/assets/images/glgourmandises22.png" (click)="navigateToMenus('Gourmandises & Fruits')">
+        </div>
+        <div class="ContainerTitle">
+          <p> Boissons Chaudes
+ </p>
+        </div>
       </div>
-     
+    </div>
+     <div class="monocategorie">
+      <div class="Container">
+        <div class="containerImage">
+          <img src="/assets/images/.png" (click)="navigateToMenus('Boissons Froides')">
+        </div>
+        <div class="ContainerTitle">
+          <p>  Boissons Froides </p>
+        </div>
+      </div>
     </div>
   </div>
 </div>

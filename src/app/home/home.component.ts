@@ -35,4 +35,14 @@ export class HomeComponent implements OnInit {
     this.famileService.setfamilename(name);
     this.router.navigateByUrl("/deta");
   }
+ navigateToFacebock(): void {
+  window.location.href = 'https://www.instagram.com/khaled_charbti/'; // Replace with your Instagram URL
+}
+ navigateSOICLAMEDOA(item: string): void {
+  
+    window.location.href = item;
+  // window.location.href = 'https://www.facebook.com/profile.php?id=100086913193624'; 
+}
+
+
 }
