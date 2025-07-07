@@ -23,6 +23,9 @@ export class FamilleeComponent {
   navigateToCategories(): void {
     this.router.navigate(['/dash']);  // Redirect to 'target' route
   }
+   navigateToHome(): void {
+    this.router.navigate(['/home']);  // Redirect to 'target' route
+  }
 
   ngOnInit(): void {
     // this.getallcategore();

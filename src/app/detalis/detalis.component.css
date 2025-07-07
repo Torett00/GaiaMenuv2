@@ -24,7 +24,20 @@
 
 
 }
-
+.btnpres{
+   position: fixed;
+      bottom: 20px;       /* Distance from bottom */
+      left: 20px;         /* Distance from left */
+      background-color: #afb133;
+      color: rgb(0, 0, 0);
+      border: none;
+      padding: 5px 5px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      z-index: 1000; /* Make sure it stays on top */
+}
 .productTitle {
   display: flex;
   align-items: center;

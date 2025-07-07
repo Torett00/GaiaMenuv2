@@ -75,5 +75,9 @@ export class DetalisComponent {
       }
       this.groupedProducts[category].push(product);
     });
+  }  
+  navigateToHome() {
+  
+    this.router.navigateByUrl("/home");
   }
 }
